@@ -1,0 +1,6 @@
+{ 
+    "AWSAccessKeyId":   "AKIAS3SEJPQUBMN22JFL",
+    "AWSSecretKey":     "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",
+    "region":           "us-west-2",
+    "dataFormat":       "json"
+}

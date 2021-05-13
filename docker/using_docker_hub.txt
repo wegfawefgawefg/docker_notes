@@ -1,0 +1,13 @@
+```PUSHING IMAGES TO DOCKER HUB```
+HOW-TO:
+    create repo on docker hub
+    docker login
+    build container with exact username/containername:tag
+    docker push <username>/containername:tag
+
+GUIDE:
+    <create repo on the site presumably>
+    sudo docker login -u gibsoncratus
+    sudo docker build -t gibsoncratus/flask-hub-public:latest .
+    sudo docker push gibsoncratus/flask-hub-public:latest
+    docker push gibsoncratus/flask-hub-public:latest

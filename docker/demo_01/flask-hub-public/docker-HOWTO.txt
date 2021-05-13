@@ -1,0 +1,23 @@
+sudo docker build -t python-flask-docker-test:latest .
+sudo docker container ls    
+    lists the running containers
+sudo docker rm <containername>
+    kill container
+sudo docker run -it 
+    input output terminal, else just stdout only
+
+------------
+docker hub:
+------------
+create repo on docker hub
+docker login
+build container with exact username/containername:tag
+docker push <username>/containername:tag
+
+------------------
+etc
+-----------------
+docker images
+    list containers
+docker image rm 
+    remove container

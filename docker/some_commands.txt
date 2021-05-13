@@ -1,0 +1,15 @@
+sudo docker build -t python-flask-docker-test:latest .
+    must be run in the folder containing the dockerfile, 
+        dockerfile location represented by the .
+sudo docker container ls    
+    lists the running containers
+sudo docker rm <containername>
+    kill container
+sudo docker run -it 
+    input output terminal, else just stdout only
+docker images
+    list containers
+docker image rm 
+    remove container
+docker rmi
+    alias for docker image rm

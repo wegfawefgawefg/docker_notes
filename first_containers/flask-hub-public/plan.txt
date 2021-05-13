@@ -1,0 +1,33 @@
+* - basic template
+
+- host db container
+
+waiting for certification file drop from barbaros
+- associate the template containers with iot integrations
+- forward data to iot
+- pull data from iot sub
+
+
+============
+    BUGS    
+============
+clone
+    refresh config column
+    edits json but 
+        new draggables dont show up
+
+delete
+    broken - desyncs the json and the images
+        if you have same name configuration and deployed
+        broken permanently
+    broken - multiple simultanious deletes
+
+fixed: change mv to cp in arxe-api 
+
+flask-hub-public stays red in Available col
+    even after downloaded multiple times
+
+json_output copied correctly
+    reflash nano
+    reinstall arxe
+

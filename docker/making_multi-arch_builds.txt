@@ -1,0 +1,16 @@
+```BUILDING FOR MULTIPLE ARCHITECTURES: via manifest```
+HOW-TO:
+    build each of the versions for each architecture
+    push them
+    create a manifest which functions as a meta-image
+        when somebody pulls it, 
+            they can specify an architecture
+            or the architecture is detected automatically on run
+
+GUIDE:
+    https://www.docker.com/blog/multi-arch-build-and-images-the-simple-way/
+    sudo docker build -t gibsoncratus/flask-hub-public:latest-amd64 --build-arg ARCH=amd64 .
+    sudo docker build -t gibsoncratus/flask-hub-public:latest-arm64-v8 --build-arg ARCH=arm64v8 .
+    sudo docker push gibsoncratus/flask-hub-public:latest-amd64
+    sudo docker push gibsoncratus/flask-hub-public:latest-arm64-v8
+    sudo docker manifest create gibsoncratus/flask-hub-public:latest --amend gibsoncratus/flask-hub-public:latest-amd64 --amend gibsoncratus/flask-hub-public:latest-arm64-v8

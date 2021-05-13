@@ -1,0 +1,27 @@
+you will be using sudo all the time with docker
+    fixable but comes with problems, just use sudo
+    reason: something about containers running as root
+        or in root directory or something
+
+docker can create lots of faux images and garbage files
+    you can use $docker system prune
+
+you cannot build arm64 docker images from amd64 directly
+    you have to use qemu, emulation
+    it wont complain directly if you try this
+        you will get a warning... which is retarded bc its not going to work anyways
+        it will just throw errors when you try to use RUN, bc host arch =/= target
+
+once your application gets larger you probably want to setup docker yamls
+    for deployment primarily, 
+    can also manage building
+
+EXPOSE 5000
+    does not actually expose port 5000 to 5000
+    just lets the user know when you run Docker Run, you do this
+        sudo docker run -p5000:5000 gibsoncratus/thing:tag
+
+volumes are just mounted folders that persist when the container dies
+
+Documentation for dockerfiles:
+    https://docs.docker.com/engine/reference/builder/

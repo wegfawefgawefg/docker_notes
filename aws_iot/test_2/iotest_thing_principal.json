@@ -1,0 +1,4 @@
+{
+    "thingName": "iotest",
+    "principal": "arn:aws:iot:us-west-2:196637981736:cert/e50c3a38921785d1584a5386c0586c8d1df4bfc9ec16941837bae4dab96c3071"
+}
